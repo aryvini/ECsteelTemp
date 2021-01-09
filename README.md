@@ -4,8 +4,8 @@ Jupyter notebook to plot the stress strain curve of steel for different temperat
 
 The `stress` function is based on fig 3.1 of EC
 
-![Equations](Equations.jpg)
-![Graph](Graph.jpg)
+![Equations](https://github.com/aryvini/ECsteelTemp/blob/main/Equations.JPG)
+![Graph](https://github.com/aryvini/ECsteelTemp/blob/main/Graph.JPG)
 
 
 
