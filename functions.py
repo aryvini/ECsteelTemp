@@ -104,7 +104,7 @@ def stress_hardening(e,temp,fp,fy,Ea):
     '''
 
     #item A(2) states that hardening valid for temperatures bellow 400 C
-    if temp >400:
+    if (temp >=400) or (e<=0.02):
         return stress(e,temp,fp,fy,Ea)
         
     else:
@@ -132,9 +132,9 @@ def stress_hardening(e,temp,fp,fy,Ea):
             print('fu definition failed')
 
         
-        #strain ranges
-        if e<=0.02:
-            return stress(e,temp,fp,fy,Ea)
+        # #strain ranges
+        # if e<=0.02:
+        #     return stress(e,temp,fp,fy,Ea)
 
         if 0.02 < e < 0.04:
             return 50*(fu-fy)*e+2*fy-fu
